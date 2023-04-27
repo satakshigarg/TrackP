@@ -222,8 +222,8 @@ const LoginScreen = () => {
 
   return (
     <SafeAreaView style={styles.root}>
-      <Text style={styles.heading}>TrackP</Text>
-      <Text style={styles.subheading}>Welcome to TrackP.</Text>
+      <Text style={styles.heading}>Track+</Text>
+      <Text style={styles.subheading}>Welcome to TrackPlus</Text>
       <Text style={{ fontSize: 18 }}>Login to Continue</Text>
       <View
         style={{
