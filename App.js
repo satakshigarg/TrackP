@@ -9,7 +9,7 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './screens/Login';
-import SignUp from './screens/SignUp';
+import Payment from './screens/Payment';
 import * as WebBrowser from 'expo-web-browser';
 import * as Google from 'expo-auth-session/providers/google';
 
@@ -60,13 +60,13 @@ export default function App() {
             style={{flex:1}}
             keyboardVerticalOffset={Platform.OS === "ios" ? -64 : 0}>
           <Stack.Navigator>
-            {/* <Stack.Screen
+            <Stack.Screen
             name="Login"
             component={Login}
             options={{
               headerShown: false,
             }}
-            /> */}
+            />
             {/* <Stack.Screen
             name="SignUp"
             component={SignUp}
@@ -84,6 +84,13 @@ export default function App() {
             <Stack.Screen 
             name="MapScreen" 
             component={MapScreen} 
+            options={{
+              headerShown: false,
+              
+            }}/>
+            <Stack.Screen 
+            name="PaymentScreen" 
+            component={Payment} 
             options={{
               headerShown: false,
               
