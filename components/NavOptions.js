@@ -17,7 +17,7 @@ const data = [
         id: "456",
         title: "Emergency",
         image: 'https://www.freepnglogos.com/uploads/ambulance-png/ambulance-gidc-digital-directory-abe-sayaji-tempo-31.png',
-        screen: "MapScreen"
+        screen: "MapScreen2"
     },
 ];
 

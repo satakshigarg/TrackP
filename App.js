@@ -10,45 +10,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './screens/Login';
 import Payment from './screens/Payment';
-import * as WebBrowser from 'expo-web-browser';
-import * as Google from 'expo-auth-session/providers/google';
-
-// WebBrowser.maybeCompleteAuthSession();
+import MapScreen2 from './screens/MapScreen2';
 
 export default function App() {
-  // const [accessToken, setAccessToken] = useState(null);
-  // consr [user, setUser] = useState(null);
-  // const [request, response, promptAsync] = Google.useIdTokenAuthRequest({
-  //   clientId:'',
-  //   iosClientId: ''
-  // });
-
-  // React.useEffect(() => {
-  //   if (response?.type === "success") {
-  //     setAccessToken(response.authentication.accessToken);
-  //     accessToken && fetchUserInfo();
-  //   }
-  // }, [response, accessToken])
-
-  // async function fetchUserInfo() {
-  //   let response = await fetch('https://www.googleapis.com/userinfo/v2/me', {
-  //     headers: {
-  //       Authorization: `Bearer ${accessToken}`
-  //     }
-  //   })
-  //   const useInfo = await response.json();
-  //   setUser(useInfo);
-  // }
-
-  // const ShowUserInfo = () => {
-  //   if(user) {
-  //     return (
-  //       <View style={}>
-  //         <Text style={}></Text>
-  //       </View>
-  //     )
-  //   }
-  // }
   const Stack = createStackNavigator();
 
   return (
@@ -67,13 +31,6 @@ export default function App() {
               headerShown: false,
             }}
             />
-            {/* <Stack.Screen
-            name="SignUp"
-            component={SignUp}
-            options={{
-              headerShown: false,
-            }}
-            /> */}
             <Stack.Screen 
             name="HomeScreen" 
             component={HomeScreen} 
@@ -82,8 +39,15 @@ export default function App() {
 
             }}/>
             <Stack.Screen 
-            name="MapScreen" 
+            name="MapScreen"
             component={MapScreen} 
+            options={{
+              headerShown: false,
+              
+            }}/>
+            <Stack.Screen 
+            name="MapScreen2"
+            component={MapScreen2} 
             options={{
               headerShown: false,
               
